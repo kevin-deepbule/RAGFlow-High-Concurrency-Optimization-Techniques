@@ -31,10 +31,10 @@ graph LR
 A[Query分析结果] --> C[Multi-way Recall]
 B[文档Chunk] --> C
 C --> D[Re-rank]
-
+```
 ## 二、架构设计
 
-#### 任务解耦架构  
+### 任务解耦架构  
 `Task Dispatch + Task Executor` 实现异步文档处理，避免阻塞实时查询
 
 #### 多模态文档解析  
